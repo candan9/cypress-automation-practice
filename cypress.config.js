@@ -4,7 +4,7 @@ module.exports = defineConfig({
   pageLoadTimeout: 30000,
   env: {
     signIn: {
-      email: "teqqqs2suetmailforvirgosol@gmail.com",
+      email: "teqqqs2sueetmailforvirgosol@gmail.com",
       password: "Ee1234012400.",
     },
   },
@@ -16,5 +16,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+  },
+  reporter: "cypress-multi-reporters",
+  reporterOptions: {
+    configFile: "reporter-config.json",
+  },
+  reporterEnabled: "spec, mocha-junit-reporter",
+  mochaJunitReporterReporterOptions: {
+    mochaFile: "cypress/results/junit/results-[hash].xml",
   },
 });
