@@ -4,7 +4,7 @@ module.exports = defineConfig({
   pageLoadTimeout: 30000,
   env: {
     signIn: {
-      email: "teqqqs2sueetmailforvirgosol@gmail.com",
+      email: "teqqqs2su3eetmailforvirgosol@gmail.com",
       password: "Ee1234012400.",
     },
   },
