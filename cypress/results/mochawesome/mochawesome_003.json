@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2022-06-10T19:52:17.492Z",
-    "end": "2022-06-10T19:53:14.514Z",
-    "duration": 57022,
+    "start": "2022-06-11T17:08:36.627Z",
+    "end": "2022-06-11T17:09:12.474Z",
+    "duration": 35847,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bee08afb-1a80-49fd-bbab-c02b91ff1229",
+      "uuid": "bda4c8a2-917a-4824-a9d4-d1e2fce3e617",
       "title": "",
       "fullFile": "cypress\\e2e\\makeAnOrder.cy.js",
       "file": "cypress\\e2e\\makeAnOrder.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b4db3318-3b4d-416d-a7ad-0a0cb1c85c7c",
+          "uuid": "ca398dbb-083e-46be-83b5-4a85d3392df8",
           "title": "Make an order",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Go login to create an account ",
               "fullTitle": "Make an order Go login to create an account ",
               "timedOut": null,
-              "duration": 19946,
+              "duration": 12653,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string. Received type boolean (false)\n    at new NodeError (node:internal/errors:371:5)\n    at validateString (node:internal/validators:119:11)\n    at Object.join (node:path:429:7)\n    at getPath (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:373:27)\n    at getPathToScreenshot (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:381:10)\n    at Object.save (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:483:12)\n    at C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\automation\\screenshot.js:16:46\n    at tryCatcher (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Immediate.Async.drainQueues [as _onImmediate] (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at processImmediate (node:internal/timers:464:21)\n",
                 "diff": null
               },
-              "uuid": "4653c733-131d-4499-a738-43aebcb515c3",
-              "parentUUID": "b4db3318-3b4d-416d-a7ad-0a0cb1c85c7c",
+              "uuid": "d4ff76ed-0b33-44d6-ad66-21be7ec56bf2",
+              "parentUUID": "ca398dbb-083e-46be-83b5-4a85d3392df8",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Assert account created ",
               "fullTitle": "Make an order Assert account created ",
               "timedOut": null,
-              "duration": 29733,
+              "duration": 19889,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string. Received type boolean (false)\n    at new NodeError (node:internal/errors:371:5)\n    at validateString (node:internal/validators:119:11)\n    at Object.join (node:path:429:7)\n    at getPath (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:373:27)\n    at getPathToScreenshot (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:381:10)\n    at Object.save (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:483:12)\n    at C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\lib\\automation\\screenshot.js:16:46\n    at tryCatcher (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Immediate.Async.drainQueues [as _onImmediate] (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.0.3\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at processImmediate (node:internal/timers:464:21)\n",
                 "diff": null
               },
-              "uuid": "9e1ee0ed-0cb4-41cb-a9fb-200ded3c3053",
-              "parentUUID": "b4db3318-3b4d-416d-a7ad-0a0cb1c85c7c",
+              "uuid": "2dd5881d-4304-4910-a01f-8210115e2bfa",
+              "parentUUID": "ca398dbb-083e-46be-83b5-4a85d3392df8",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "4653c733-131d-4499-a738-43aebcb515c3",
-            "9e1ee0ed-0cb4-41cb-a9fb-200ded3c3053"
+            "d4ff76ed-0b33-44d6-ad66-21be7ec56bf2",
+            "2dd5881d-4304-4910-a01f-8210115e2bfa"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 49679,
+          "duration": 32542,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

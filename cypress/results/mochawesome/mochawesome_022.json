@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-06-11T18:33:33.723Z",
+    "end": "2022-06-11T18:34:12.186Z",
+    "duration": 38463,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f3afe3a0-3550-47fa-a383-2c1d9eeffa79",
+      "title": "",
+      "fullFile": "cypress\\e2e\\makeAnOrder.cy.js",
+      "file": "cypress\\e2e\\makeAnOrder.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b48240c-343b-4de9-a5cd-a63d3f1a3fc6",
+          "title": "Make an order",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go login to create an account ",
+              "fullTitle": "Make an order Go login to create an account ",
+              "timedOut": null,
+              "duration": 10563,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "home.goToSignIn();\nlogin.navigateToRegister();\ncy.register();",
+              "err": {
+                "message": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)",
+                "estack": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string. Received type boolean (false)\n    at new NodeError (node:internal/errors:371:5)\n    at validateString (node:internal/validators:119:11)\n    at Object.join (node:path:429:7)\n    at getPath (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:373:27)\n    at getPathToScreenshot (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:381:10)\n    at Object.save (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:483:12)\n    at C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\automation\\screenshot.js:16:46\n    at tryCatcher (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Immediate.Async.drainQueues [as _onImmediate] (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at processImmediate (node:internal/timers:464:21)\n",
+                "diff": null
+              },
+              "uuid": "d09cf434-12e1-4ced-b64b-ea29bc70356a",
+              "parentUUID": "1b48240c-343b-4de9-a5cd-a63d3f1a3fc6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assert account created ",
+              "fullTitle": "Make an order Assert account created ",
+              "timedOut": null,
+              "duration": 25094,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".header_user_info\").should(\"be.visible\");\nhome.selectCategory();\nproducts.addToCart();\nhome.continueShopping();\nhome.searchTerm(\"Summer\");\nproducts.addToCart();\nproducts.checkout();\nproducts.assertQuantity();\nproducts.checkoutOrdering();\nlogin.login();\ncy.scrollTo('bottom');\ncy.get('.button-medium').last().click();\nproducts.agreeTerms();\nproducts.checkoutOrdering();\nproducts.paymentMethod();\ncy.get('.button-medium').last().click();\nhome.goToAccount();\nhome.goToOrders();\nhome.checkOrderCreated(); //",
+              "err": {
+                "message": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)",
+                "estack": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string. Received type boolean (false)\n    at new NodeError (node:internal/errors:371:5)\n    at validateString (node:internal/validators:119:11)\n    at Object.join (node:path:429:7)\n    at getPath (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:373:27)\n    at getPathToScreenshot (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:381:10)\n    at Object.save (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\screenshots.js:483:12)\n    at C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\lib\\automation\\screenshot.js:16:46\n    at tryCatcher (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Immediate.Async.drainQueues [as _onImmediate] (C:\\Users\\wasto\\AppData\\Local\\Cypress\\Cache\\10.1.0\\Cypress\\resources\\app\\packages\\server\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at processImmediate (node:internal/timers:464:21)\n",
+                "diff": null
+              },
+              "uuid": "c0c83891-9dfb-4e2c-8580-5543d69bc475",
+              "parentUUID": "1b48240c-343b-4de9-a5cd-a63d3f1a3fc6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d09cf434-12e1-4ced-b64b-ea29bc70356a",
+            "c0c83891-9dfb-4e2c-8580-5543d69bc475"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 35657,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
